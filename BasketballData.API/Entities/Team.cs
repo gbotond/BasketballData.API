@@ -21,7 +21,9 @@ namespace BasketballData.API.Entities
         [MaxLength(50)]
         public string City { get; set; }
 
-        public ICollection<Game> Games { get; set; }
+        public ICollection<Game> HomeGames { get; set; }
+            = new List<Game>();
+        public ICollection<Game> AwayGames { get; set; }
             = new List<Game>();
     }
 }

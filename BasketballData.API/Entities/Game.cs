@@ -8,16 +8,14 @@ namespace BasketballData.API.Entities
     {
         [Key]       
         public Guid Id { get; set; }
-
-        [ForeignKey("VisitorTeamId")]
-        public Team VisitorTeam { get; set; }
-
-        [ForeignKey("HomeTeamId")]
-        public Team HomeTeam { get; set; }
-
+        public Guid HomeTeamId { get; set; }
         public Guid VisitorTeamId { get; set; }
 
-        public Guid HomeTeamId { get; set; }
+        [ForeignKey("HomeTeamId")]
+        public virtual Team HomeTeam { get; set; }
+
+        [ForeignKey("VisitorTeamId")]
+        public virtual Team VisitorTeam { get; set; }
 
         [Required]
         [MaxLength(15)]

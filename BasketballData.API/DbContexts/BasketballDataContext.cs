@@ -16,6 +16,9 @@ namespace BasketballData.API.DbContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Game>().HasOne(g => g.HomeTeam).WithMany(t => t.HomeGames).HasForeignKey(g => g.HomeTeamId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Game>().HasOne(g => g.VisitorTeam).WithMany(t => t.AwayGames).HasForeignKey(g => g.VisitorTeamId).OnDelete(DeleteBehavior.Restrict);
+
             // seed the database with dummy data
             modelBuilder.Entity<Team>().HasData(
                 new Team()

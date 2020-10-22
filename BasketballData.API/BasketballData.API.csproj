@@ -5,7 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Compile Remove="Migrations\20201022152054_InitialMigration.cs" />
+    <Compile Remove="Migrations\20201022152054_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20201022161850_changedeletebehavior.cs" />
+    <Compile Remove="Migrations\20201022161850_changedeletebehavior.Designer.cs" />
+    <Compile Remove="Migrations\20201022162051_changedeletebehavior.cs" />
+    <Compile Remove="Migrations\20201022162051_changedeletebehavior.Designer.cs" />
+    <Compile Remove="Migrations\20201022162458_changedeletebehavior.cs" />
+    <Compile Remove="Migrations\20201022162458_changedeletebehavior.Designer.cs" />
+    <Compile Remove="Migrations\20201022162836_changedeletebehavior.cs" />
+    <Compile Remove="Migrations\20201022162836_changedeletebehavior.Designer.cs" />
+    <Compile Remove="Migrations\20201022163240_tryfix.cs" />
+    <Compile Remove="Migrations\20201022163240_tryfix.Designer.cs" />
+    <Compile Remove="Migrations\20201022174229_fix.cs" />
+    <Compile Remove="Migrations\20201022174229_fix.Designer.cs" />
+    <Compile Remove="Migrations\20201022174637_fix.cs" />
+    <Compile Remove="Migrations\20201022174637_fix.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
